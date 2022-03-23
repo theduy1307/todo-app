@@ -8,7 +8,7 @@
 import { Component, Vue } from 'vue-property-decorator'
 
 import 'element-ui/lib/theme-chalk/index.css'
-import TodoApp from './components/TodoApp.vue'
+import TodoApp from './components/todo-app.vue'
 
 @Component({
   components: {
