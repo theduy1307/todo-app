@@ -7,15 +7,15 @@ export default class EditTaskDialog extends Vue {
   options:any[] = [
     {
       value: '1',
-      title: 'Rất quan trọng'
+      title: this.$t('very_important')
     },
     {
       value: '2',
-      title: 'Quan trọng'
+      title: this.$t('important')
     },
     {
       value: '3',
-      title: 'Không quan trọng'
+      title: this.$t('none_important')
     }
   ]
 

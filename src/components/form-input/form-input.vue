@@ -4,12 +4,12 @@
       <el-input
         v-model="task"
         autocomplete="off"
-        placeholder="Nhập task mới"
+        :placeholder="$t('enter_new_task')"
         @keyup.enter.native="handleAddTask"
       ></el-input>
     </el-col>
     <el-col :span="10" style="margin-left: 5px">
-      <el-select style="width: 100%" v-model="level" placeholder="Chọn mức độ">
+      <el-select style="width: 100%" v-model="level" :placeholder="$t('choose_level')">
         <el-option
           v-for="item in options"
           :key="item.value"
@@ -26,7 +26,7 @@
         @click="handleAddTask"
         :disabled="task.length === 0 || level.length === 0"
         icon="el-icon-plus"
-        >Thêm</el-button
+        >{{$t('add')}}</el-button
       >
     </el-col>
   </el-row>

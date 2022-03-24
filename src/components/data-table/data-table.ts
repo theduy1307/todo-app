@@ -16,7 +16,7 @@ export default class FormInput extends Vue {
 
     @Emit('change-status')
     handleChangeStatus (row:any) {
-      return row
+      return row.id
     }
 
     @Emit('edit-task')

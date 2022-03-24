@@ -1,0 +1,22 @@
+{
+    "title": "Todo App",
+    "task_name": "Name",
+    "status": "Status",
+    "level": "Level",
+    "action": "Action",
+    "click_change": "Click to change",
+    "undone": "Undone",
+    "done": "Done",
+    "very_important": "Very important",
+    "important": "Important",
+    "none_important": "None important",
+    "delete": "Delete",
+    "enter_new_task": "Please enter new task",
+    "choose_level": "Choose level",
+    "add": "Add new",
+    "edit_task": "Edit Task",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "title_success": "Congratulate",
+    "content_success": "Your task is added successfully"
+}

@@ -1,24 +1,24 @@
 <template>
   <el-row>
     <el-table :data="tasks" stripe style="width: 100%">
-      <el-table-column label="Tên tác vụ">
+      <el-table-column :label="$t('task_name')">
         <template slot-scope="scope">
-          <el-tooltip class="item" effect="dark" content="Nhấp để thay đổi" placement="top-start">
+          <el-tooltip class="item" effect="dark" :content="$t('click_change')" placement="top-start">
           <span style="cursor:pointer" @click="handleEditTask(scope.row.id)">{{scope.row.name}}</span>
           </el-tooltip>
         </template>
       </el-table-column>
-      <el-table-column label="Trạng thái">
+      <el-table-column :label="$t('status')">
         <template slot-scope="scope">
           <el-switch
             :value="scope.row.status"
             @change="handleChangeStatus(scope.row)"
-            active-text="Chưa làm"
-            inactive-text="Đã làm">
+            :active-text="$t('undone')"
+            :inactive-text="$t('done')">
           </el-switch>
         </template>
       </el-table-column>
-      <el-table-column label="Mức độ">
+      <el-table-column :label="$t('level')">
         <template slot-scope="scope">
           <el-tag
             size="mini"
@@ -34,22 +34,22 @@
             :disable-transitions="true"
             >{{
               scope.row.level === "1"
-                ? "Rất quan trọng"
+                ? $t('very_important')
                 : scope.row.level === "2"
-                ? "Quan trọng"
-                : "Không quan trọng"
+                ? $t('important')
+                : $t('none_important')
             }}</el-tag
           >
         </template>
       </el-table-column>
-      <el-table-column fixed="right" label="Thao tác">
+      <el-table-column fixed="right" :label="$t('action')">
         <template slot-scope="scope">
           <el-button
             @click="handleDeleteTask(scope.$index)"
             type="danger"
             size="mini"
             icon="el-icon-delete"
-            >Xóa</el-button
+            >{{$t('delete')}}</el-button
           >
         </template>
       </el-table-column>

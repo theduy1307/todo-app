@@ -1,0 +1,22 @@
+{
+    "title": "Ứng dụng Todo",
+    "task_name": "Tên tác vụ",
+    "status": "Trạng thái",
+    "level": "Mức độ",
+    "action": "Thao tác",
+    "click_change": "Nhấp để thay đổi",
+    "undone": "Chưa làm",
+    "done": "Đã làm",
+    "delete": "Xóa",
+    "enter_new_task": "Nhập task mới",
+    "choose_level": "Chọn mức độ",
+    "add": "Thêm mới",
+    "edit_task": "Chỉnh sửa nhiệm vụ",
+    "confirm": "Xác nhận",
+    "cancel": "Hủy",
+    "title_success": "Thảnh công",
+    "content_success": "Nhiệm vụ của bạn được thêm thảnh công",
+    "very_important": "Rất quan trọng",
+    "important": "Quan trọng",
+    "none_important": "Không quan trọng"
+}

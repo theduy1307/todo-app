@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-row>
-      <el-col :span="24" align="center"><h1>Todo App</h1></el-col>
+      <el-col :span="24" align="center"><h1>{{$t("title")}}</h1></el-col>
     </el-row>
     <FormInput @add-task="handleAddTask"/>
     <DataTable
